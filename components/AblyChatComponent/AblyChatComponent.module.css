@@ -1,0 +1,131 @@
+.chatWrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  gap: 11px;
+
+  position: absolute;
+  width: 604px;
+  height: 70%;
+  left: 12px;
+  top:28%;
+
+  background: #AF9F5D;
+  border-radius: 10px;
+}
+
+.chatHolder {
+    /* messages */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 10px;
+
+  width: 576px;
+  height: inherit;
+
+  background: #776037;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}
+
+.chatText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 1em;
+  height: calc(100vh - 40px - 100px - 100px - 100px);
+  overflow-y: auto;
+  width: 80%;
+}
+
+.form {
+    /* type here */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+
+  width: 576px;
+  height: 59px;
+
+  background: #776037;
+  border-radius: 10px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.textarea {
+  padding: 1em;
+  border: 0;
+  height: 50%;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto, Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue, sans-serif;
+  font-size: 1.2em;
+  width: 470px;
+  height: 19px;
+
+
+  font-weight: 700;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  }
+
+.button {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+  /* background-color: gray; */
+  background: linear-gradient(to right, #363795, #005C97);
+}
+
+.button:hover {
+  background: linear-gradient(90deg, rgba(54,55,149,1) 0%, rgba(0,92,151,1) 62%, rgba(0,125,205,1) 100%);
+}
+
+.button:disabled,
+.button:hover:disabled {
+  background: linear-gradient(to right, #363795, #005C97);
+  opacity: 0.5;
+  /* background-color: gray; */
+}
+
+.message {
+  background-color: #eef5f8;
+  padding: 1em;
+  border-radius: 10px;
+  flex-grow: 0;
+  width: 80%;
+  height: auto;
+  word-break: break-all;
+  line-height: 12px;
+}

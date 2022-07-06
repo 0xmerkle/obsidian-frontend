@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
     "@starknet-react/core": "^0.12.0",
+    "ably": "1.2.5-beta.1",
+    "framer-motion": "^6.4.2",
     "get-starknet": "^1.4.2",
     "next": "12.2.0",
     "react": "18.2.0",
