@@ -54,13 +54,16 @@ const AblyChatComponent = () => {
       messageEnd.scrollIntoView({ behaviour: "smooth" });
     });
 
-    return (
+  return (
+      <div className={styles.chatWrapper}>
       <div className={styles.chatHolder}>
         <div className={styles.chatText}>
           {messages}
           <div ref={(element) => { messageEnd = element; }}></div>
         </div>
-        <form onSubmit={handleFormSubmission} className={styles.form}>
+
+      </div>
+      <form onSubmit={handleFormSubmission} className={styles.form}>
           <Input
             ref={(element) => { inputBox = element; }}
             value={messageText}
