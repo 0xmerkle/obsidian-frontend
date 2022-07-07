@@ -1,6 +1,9 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { StarknetProvider, getInstalledInjectedConnectors } from '@starknet-react/core'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import {
+  StarknetProvider,
+  getInstalledInjectedConnectors,
+} from "@starknet-react/core";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const connectors = getInstalledInjectedConnectors();
@@ -12,4 +15,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default MyApp
+export default MyApp;
