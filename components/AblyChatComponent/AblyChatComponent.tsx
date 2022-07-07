@@ -80,7 +80,11 @@ const AblyChatComponent = () => {
                     onKeyDown={(e) => handleKeyPress(e)}
                     className="w-full rounded-md bg-stone-500 px-2 py-1"
                 ></input>
-                <button type="submit" className="rounded-md bg-stone-500 px-2 py-1" disabled={messageTextIsEmpty}>
+                <button
+                    type="submit"
+                    className="rounded-md bg-stone-500 px-2 py-1 text-white"
+                    disabled={messageTextIsEmpty}
+                >
                     Send
                 </button>
             </form>
