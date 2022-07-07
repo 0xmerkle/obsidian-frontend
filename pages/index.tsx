@@ -27,6 +27,7 @@ const Home: NextPage = () => {
           <div className="flex h-36 w-full flex-row space-x-2 rounded-md bg-stone-800 p-2 shadow-md">
             <div className="flex h-full w-full flex-col rounded-md bg-stone-500 p-2">
               <p className="font-bold text-white">Dead</p>
+              <div className="mb-2 h-px w-full bg-white" />
 
               <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
                 <div className="mr-4 h-6 w-6 rounded-full bg-orange-400"></div>
@@ -39,30 +40,33 @@ const Home: NextPage = () => {
             </div>
             <div className="flex h-full w-full flex-col overflow-scroll rounded-md bg-stone-500 p-2">
               <p className="font-bold text-white">Alive</p>
+              <div className="mb-2 h-px w-full bg-white" />
 
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Soju</p>
-              </div>
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Cheikh</p>
-              </div>
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Merk</p>
-              </div>
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Caleb</p>
-              </div>
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Merk</p>
-              </div>
-              <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
-                <p className="text-xs text-white">Caleb</p>
+              <div className="h-full overflow-scroll">
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Soju</p>
+                </div>
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Cheikh</p>
+                </div>
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Merk</p>
+                </div>
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Caleb</p>
+                </div>
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Merk</p>
+                </div>
+                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                  <div className="mr-4 h-6 w-6 rounded-full bg-white"></div>
+                  <p className="text-xs text-white">Caleb</p>
+                </div>
               </div>
             </div>
           </div>
