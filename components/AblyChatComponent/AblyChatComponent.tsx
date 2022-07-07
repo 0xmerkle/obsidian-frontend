@@ -25,7 +25,6 @@ const AblyChatComponent = () => {
 
     const sendChatMessage = (messageText: string) => {
     //@ts-ignore
-      console.log(process.env.NEXT_APP_ABLY_API_KEY)
     channel.publish({ name: "chat-message", data: messageText });
     setMessageText("");
     inputBox.focus();
