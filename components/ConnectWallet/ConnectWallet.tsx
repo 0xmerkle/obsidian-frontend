@@ -1,36 +1,49 @@
 import React from 'react';
 import { Connector, useConnectors, useStarknet } from '@starknet-react/core';
-import { Button, Box, Text } from '@chakra-ui/react';
 const ConnectWallet: React.FC = () => {
     const { connect, connectors, disconnect } = useConnectors();
     const { account } = useStarknet();
     return (
-        <Box gridArea={'c'} borderRadius={'10px'} maxWidth="">
+        <div style={{ borderRadius: '10px', backgroundColor: 'whitesmoke', width: '30%', textAlign: 'center' }}>
             {account ? (
                 <>
-                    <Box width={'500px'} minWidth={'300px'} noOfLines={2}>
-                        <Text>Connected Account: {account}</Text>
-                    </Box>
-                    <Button onClick={disconnect}>Disconnect</Button>
+                    <div style={{ width: '500px', minWidth: '300px', maxLines: 2 }}>
+                        <p>Connected Account: {account}</p>
+                    </div>
+                    <button
+                        style={{
+                            borderRadius: '10px',
+                            fontWeight: 'bold',
+                        }}
+                        onClick={disconnect}
+                    >
+                        Disconnect
+                    </button>
                 </>
             ) : (
-                <Box gridArea={'c'} display="flex" gap="2rem" maxWidth={'500px'} margin={'10px'}>
+                <div
+                    style={{
+                        display: 'flex',
+                        gap: '2rem',
+                        maxWidth: '500px',
+                        margin: '10px',
+                        justifyContent: 'center',
+                    }}
+                >
                     {connectors.map((connector) =>
                         connector.available() ? (
-                            <Box key={connector.id()} gridArea="c">
-                                <Button key={connector.id()} onClick={() => connect(connector)}>
+                            <div key={connector.id()}>
+                                <button key={connector.id()} onClick={() => connect(connector)}>
                                     Connect {connector.name()}
-                                </Button>
-                            </Box>
+                                </button>
+                            </div>
                         ) : (
-                            <Box height={200} width={300}>
-                                No supported wallets in this browser
-                            </Box>
+                            <div>No supported wallets in this browser</div>
                         ),
                     )}
-                </Box>
+                </div>
             )}
-        </Box>
+        </div>
     );
 };
 
