@@ -5,10 +5,11 @@ const PageContainer = (props: { children: ReactNode }) => {
     <Box
       display={'grid'}
       gridTemplateAreas={`
-      'a a a b b h c'
-      'x x x e e e e'
-      'd d d e e e e'
-      'd d d e e e e'`}
+      'a a a b b b c c'
+      'x x x e e e e e'
+      'd d d e e e e e'
+      'd d d e e e e e'`}
+      gap="100px"
     >
     {props.children}
     </Box>

@@ -19,10 +19,10 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageContainer>
-        {/* <Box gridArea={'c'} h="100px"> */}
+        <Box gridArea={'c'} h="100px" maxWidth="30%">
         <ConnectWallet />
 
-        {/* </Box> */}
+        </Box>
       <AblyChatComponent/>
       </PageContainer>
 
