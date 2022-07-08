@@ -6,7 +6,10 @@ module.exports = {
             backgroundImage: {
                 'lava-texture': "url('/lava-texture.jpeg')",
             },
+            fontFamily: {
+                alagard: ['Alagard', 'serif'],
+            },
         },
     },
-    plugins: [require('tailwind-scrollbar')],
+    plugins: [require('tailwind-scrollbar'), require('tailwindcss-textshadow')],
 };
