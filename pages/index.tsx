@@ -32,20 +32,32 @@ const Home: NextPage = () => {
                                 <p className="font-bold text-white">Dead</p>
                                 <div className="mb-2 h-px w-full bg-white" />
 
-                                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                                    <ProfileIcon image={'/soju.png'} />
-                                    <p className="text-xs text-white">Sandra: Killer</p>
-                                </div>
-                                <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                                    <ProfileIcon image={'/soju.png'} />
-                                    <p className="text-xs text-white">Alfred: Innocent</p>
+                                <div className="h-full overflow-scroll scrollbar-thin scrollbar-thumb-stone-600 scrollbar-track-stone-900">
+                                    <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                                        <ProfileIcon image={'/soju.png'} />
+                                        <p className="text-xs text-white">
+                                            Caleb: <b className="text-red-400">Killer</b>
+                                        </p>
+                                    </div>
+                                    <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                                        <ProfileIcon image={'/soju.png'} />
+                                        <p className="text-xs text-white">
+                                            Soju: <b className="text-green-400">Innocent</b>
+                                        </p>
+                                    </div>
+                                    <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
+                                        <ProfileIcon image={'/soju.png'} />
+                                        <p className="text-xs text-white">
+                                            Cheikh: <b className="text-green-400">Innocent</b>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="flex h-full w-full flex-col overflow-scroll  rounded-md bg-stone-500	 p-2 shadow-inner">
+                            <div className="flex h-full w-full flex-col rounded-md bg-stone-500	 p-2 shadow-inner">
                                 <p className="font-bold text-white">Alive</p>
                                 <div className="mb-2 h-px w-full bg-white" />
 
-                                <div className="h-full overflow-scroll">
+                                <div className="h-full overflow-scroll scrollbar-thin scrollbar-thumb-stone-600 scrollbar-track-stone-900">
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
                                         <ProfileIcon image={'/soju.png'} />
                                         <p className="text-xs text-white">Soju</p>

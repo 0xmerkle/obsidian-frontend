@@ -62,7 +62,7 @@ const AblyChatComponent = () => {
 
     return (
         <div className="flex h-full w-full flex-col">
-            <div className="mb-4 h-96 w-full overflow-scroll rounded-md bg-stone-500 shadow-inner">
+            <div className="mb-4 h-96 w-full overflow-scroll rounded-md bg-stone-500 shadow-inner scrollbar-thin scrollbar-thumb-stone-600 scrollbar-track-stone-900">
                 <div className="flex h-fit flex-col items-start space-y-4 p-4">
                     {messages}
                     <div
