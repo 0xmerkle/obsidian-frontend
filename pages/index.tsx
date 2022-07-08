@@ -28,7 +28,7 @@ const Home: NextPage = () => {
                     <ConnectWallet />
                     <div className="absolute bottom-0 left-0 flex w-[32rem] flex-col space-y-4">
                         <div className="flex h-36 w-full flex-row space-x-2 rounded-md bg-lava-texture p-2 shadow-md">
-                            <div className="flex h-full w-full flex-col rounded-md bg-stone-500 p-2">
+                            <div className="flex h-full w-full flex-col rounded-md bg-stone-500 p-2 shadow-inner">
                                 <p className="font-bold text-white">Dead</p>
                                 <div className="mb-2 h-px w-full bg-white" />
 
@@ -41,7 +41,7 @@ const Home: NextPage = () => {
                                     <p className="text-xs text-white">Alfred: Innocent</p>
                                 </div>
                             </div>
-                            <div className="flex h-full w-full flex-col overflow-scroll rounded-md bg-stone-500 p-2">
+                            <div className="flex h-full w-full flex-col overflow-scroll  rounded-md bg-stone-500	 p-2 shadow-inner">
                                 <p className="font-bold text-white">Alive</p>
                                 <div className="mb-2 h-px w-full bg-white" />
 
@@ -51,11 +51,11 @@ const Home: NextPage = () => {
                                         <p className="text-xs text-white">Soju</p>
                                     </div>
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                                        <ProfileIcon image={'/soju.png'} />
+                                        <ProfileIcon image={'/cheikh.jpeg'} />
                                         <p className="text-xs text-white">Cheikh</p>
                                     </div>
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                                        <ProfileIcon image={'/soju.png'} />
+                                        <ProfileIcon image={'/merkle.png'} />
                                         <p className="text-xs text-white">Merk</p>
                                     </div>
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                                         <p className="text-xs text-white">Caleb</p>
                                     </div>
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
-                                        <ProfileIcon image={'/soju.png'} />
+                                        <ProfileIcon image={'/merkle.png'} />
                                         <p className="text-xs text-white">Merk</p>
                                     </div>
                                     <div className="flex w-full flex-row items-center justify-start rounded-md px-2 py-1 ">
@@ -91,7 +91,7 @@ export interface ProfileIconProps {
     image: string;
 }
 
-const ProfileIcon = ({ image }: ProfileIconProps) => {
+export const ProfileIcon = ({ image }: ProfileIconProps) => {
     return (
         <div className="relative mr-4 h-6 w-6">
             <Image alt="" src={image} layout="fill" className="h-full w-full rounded-full object-cover" />

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useChannel } from '../../hooks/AblyReactEffect';
-import styles from './AblyChatComponent.module.css';
+import { ProfileIcon } from '../../pages';
 
 const AblyChatComponent = () => {
     let inputBox: any = null;
@@ -47,9 +47,12 @@ const AblyChatComponent = () => {
         //@ts-ignore
         const author = message.connectionId === ably.connection.id ? 'me' : 'other';
         return (
-            <span key={index} className={styles.message} data-author={author}>
-                {message.data}
-            </span>
+            <div key={index} className="flex h-full w-full flex-row items-center">
+                <ProfileIcon image={'/merkle.png'} />
+                <span className="text-xs font-bold text-white" data-author={author}>
+                    {message.data}
+                </span>
+            </div>
         );
     });
 
@@ -59,8 +62,8 @@ const AblyChatComponent = () => {
 
     return (
         <div className="flex h-full w-full flex-col">
-            <div className="mb-4 h-96 w-full rounded-md bg-stone-500">
-                <div className="flex h-full flex-col items-start">
+            <div className="mb-4 h-96 w-full overflow-scroll rounded-md bg-stone-500 shadow-inner">
+                <div className="flex h-fit flex-col items-start space-y-4 p-4">
                     {messages}
                     <div
                         ref={(element) => {
@@ -78,11 +81,11 @@ const AblyChatComponent = () => {
                     placeholder="Type a message..."
                     onChange={(e) => setMessageText(e.target.value)}
                     onKeyDown={(e) => handleKeyPress(e)}
-                    className="w-full rounded-md bg-stone-500 px-2 py-1"
+                    className="w-full rounded-md bg-stone-500 px-2 py-1 text-sm text-white shadow-inner focus:outline-none"
                 ></input>
                 <button
                     type="submit"
-                    className="rounded-md bg-stone-500 px-2 py-1 text-white"
+                    className="rounded-md bg-stone-500 px-2 py-1 text-sm text-white"
                     disabled={messageTextIsEmpty}
                 >
                     Send
