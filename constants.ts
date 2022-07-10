@@ -1,0 +1,3 @@
+
+
+export const GAME_FACTORY_ADDRESS = "0x23edc2b4f513da5efc8bea21c9893f0ddf73096fd22679b781874e629f48c04"

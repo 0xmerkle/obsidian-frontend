@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import dynamic from "next/dynamic";
+import CreateNewGameButton from "../components/AblyChatComponent/createNewGameButton/CreateNewGameButton";
 
 const AblyChatComponent = dynamic(
   () => import("../components/AblyChatComponent/AblyChatComponent"),
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
           <div className="flex h-fit rounded-md border-8 border-stone-800 bg-stone-500 px-8 py-4 text-2xl font-bold text-white shadow-md">
             DAY 1 | 60s
           </div>
+          <CreateNewGameButton />
         </div>
         <div className="absolute bottom-0 left-0 flex w-[32rem] flex-col space-y-4">
           <div className="flex h-36 w-full flex-row space-x-2 rounded-md bg-stone-800 p-2 shadow-md">
